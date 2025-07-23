@@ -1,57 +1,103 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My First One‑Page Site</title>
-
-  <!-- 主样式 -->
+  <title>Dream Studio · 全栈创意团队</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://fav.farm/✨">
 </head>
-
 <body>
-  <!-- ====== 顶部导航 ====== -->
+  <!-- ============ 顶部导航 ============ -->
   <header class="navbar">
-    <nav>
-      <a href="#hero">首页</a>
-      <a href="#about">关于</a>
-      <a href="#contact">联系</a>
-    </nav>
+    <div class="container nav-inner">
+      <a class="logo" href="#hero">Dream Studio</a>
+
+      <nav id="nav" class="nav-links">
+        <a href="#services">服务</a>
+        <a href="#portfolio">作品</a>
+        <a href="#about">关于</a>
+        <a href="#contact">联系</a>
+      </nav>
+
+      <!-- 汉堡菜单 -->
+      <button id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <!-- ====== Hero Section ====== -->
-  <section id="hero" class="hero">
-    <h1>欢迎来到我的一页式网站！</h1>
-    <p class="subtitle">用 HTML + CSS + JS 就能做出酷炫效果 🚀</p>
-    <a class="btn" href="#about">了解更多</a>
+  <!-- ============ Hero ============ -->
+  <section id="hero" class="hero section">
+    <div class="container hero-content" data-animate>
+      <h1>让你的<span>品牌</span>一见倾心</h1>
+      <p>从网站、UI 到全链路开发，一站式创意解决方案</p>
+      <a class="btn primary" href="#contact">获取报价</a>
+    </div>
+    <img class="hero-img" src="https://picsum.photos/seed/hero/960/680" alt="Hero Banner" loading="lazy" data-animate>
   </section>
 
-  <!-- ====== About Section ====== -->
-  <section id="about" class="about">
-    <h2>关于本站</h2>
-    <p>
-      这是一段示例文字，用来展示一页式网站的多 Section 布局。
-      你可以在这里放置项目介绍、技能栈、时间线等任意内容。
-    </p>
+  <!-- ============ Services ============ -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title" data-animate>我们的服务</h2>
+      <div class="grid services-list">
+        <article class="card" data-animate>
+          <h3>响应式网站</h3>
+          <p>自适应多端布局，秒开秒载，助力 SEO</p>
+        </article>
+        <article class="card" data-animate>
+          <h3>品牌设计</h3>
+          <p>LOGO、配色、VI 体系，全方位塑造品牌形象</p>
+        </article>
+        <article class="card" data-animate>
+          <h3>小程序 / App</h3>
+          <p>跨平台框架 + 原生优化，快速上线</p>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <!-- ====== Contact Section ====== -->
-  <section id="contact" class="contact">
-    <h2>联系方式</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="姓名" required />
-      <input type="email" placeholder="邮箱" required />
-      <textarea rows="4" placeholder="留言内容"></textarea>
-      <button type="submit">发送</button>
-    </form>
+  <!-- ============ Portfolio ============ -->
+  <section id="portfolio" class="section alt">
+    <div class="container">
+      <h2 class="section-title" data-animate>精选案例</h2>
+      <div class="grid portfolio-list">
+        <figure data-animate><img src="https://picsum.photos/seed/p1/600/420" alt="案例1"><figcaption>科技 SaaS 官网</figcaption></figure>
+        <figure data-animate><img src="https://picsum.photos/seed/p2/600/420" alt="案例2"><figcaption>时尚电商平台</figcaption></figure>
+        <figure data-animate><img src="https://picsum.photos/seed/p3/600/420" alt="案例3"><figcaption>教育直播系统</figcaption></figure>
+      </div>
+    </div>
   </section>
 
-  <!-- ====== 页脚 ====== -->
+  <!-- ============ About ============ -->
+  <section id="about" class="section">
+    <div class="container about-content" data-animate>
+      <h2 class="section-title">关于我们</h2>
+      <p>Dream Studio 成立于 2018 年，专注数字体验设计与开发。团队由 UI/UX 设计师、全栈工程师、增长运营组成，服务客户超过 120+ 家企业。</p>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section id="contact" class="section alt">
+    <div class="container contact-wrapper" data-animate>
+      <h2 class="section-title">联系合作</h2>
+      <form id="contact-form">
+        <input name="name" type="text" placeholder="姓名" required />
+        <input name="email" type="email" placeholder="邮箱" required />
+        <textarea name="msg" rows="4" placeholder="您的需求…" required></textarea>
+        <button class="btn primary" type="submit">发送需求</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ Footer ============ -->
   <footer class="footer">
-    © 2025 My First One‑Page Site
+    <div class="container">
+      <small>© 2018‑2025 Dream Studio · 粤ICP备12345678号‑1</small>
+    </div>
   </footer>
 
-  <!-- 主脚本 -->
   <script src="app.js"></script>
 </body>
 </html>
