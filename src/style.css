@@ -1,0 +1,121 @@
+/* -------- 全局基础 -------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth;   /* 让锚点平滑滚动 */
+}
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* -------- 导航栏 -------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #ffffffee;   /* 半透明白 */
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+  z-index: 99;
+}
+.navbar nav {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.75rem 1rem;
+}
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navbar a:hover {
+  color: #007acc;
+}
+
+/* -------- 通用 Section 样式 -------- */
+section {
+  padding: 4rem 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  color: #555;
+}
+
+/* -------- Hero -------- */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #6a8dff 0%, #89c4ff 100%);
+  color: #fff;
+}
+.hero .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  color: #0060df;
+  border-radius: 9999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.hero .btn:hover {
+  background: #e5efff;
+}
+
+/* -------- About -------- */
+.about p {
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* -------- Contact -------- */
+form {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+input, textarea, button {
+  padding: 0.75rem;
+  border: 1px solid #cdd6e1;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+button {
+  cursor: pointer;
+  background: #0060df;
+  color: #fff;
+  border: none;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #004bb5;
+}
+
+/* -------- Footer -------- */
+.footer {
+  text-align: center;
+  padding: 1rem 0 2rem;
+  color: #666;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First One‑Page Site</title>
+
+  <!-- 主样式 -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ====== 顶部导航 ====== -->
+  <header class="navbar">
+    <nav>
+      <a href="#hero">首页</a>
+      <a href="#about">关于</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <!-- ====== Hero Section ====== -->
+  <section id="hero" class="hero">
+    <h1>欢迎来到我的一页式网站！</h1>
+    <p class="subtitle">用 HTML + CSS + JS 就能做出酷炫效果 🚀</p>
+    <a class="btn" href="#about">了解更多</a>
+  </section>
+
+  <!-- ====== About Section ====== -->
+  <section id="about" class="about">
+    <h2>关于本站</h2>
+    <p>
+      这是一段示例文字，用来展示一页式网站的多 Section 布局。
+      你可以在这里放置项目介绍、技能栈、时间线等任意内容。
+    </p>
+  </section>
+
+  <!-- ====== Contact Section ====== -->
+  <section id="contact" class="contact">
+    <h2>联系方式</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="姓名" required />
+      <input type="email" placeholder="邮箱" required />
+      <textarea rows="4" placeholder="留言内容"></textarea>
+      <button type="submit">发送</button>
+    </form>
+  </section>
+
+  <!-- ====== 页脚 ====== -->
+  <footer class="footer">
+    © 2025 My First One‑Page Site
+  </footer>
+
+  <!-- 主脚本 -->
+  <script src="app.js"></script>
+</body>
+</html>
